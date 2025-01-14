@@ -48,12 +48,13 @@ app.post("/download", async (req, res) => {
       fs.unlink(filePath, (err) => {
         if (err) {
           console.error("Error deleting file:", err);
+          res.redirect("/");
         } else {
           console.log("File deleted successfully");
         }
       });
     }, 10000);
-    res.redirect("/");
+
     res.download(filePath, "audio.mp3", (err) => {
       if (err) {
         console.log(err);
