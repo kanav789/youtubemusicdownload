@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Extractor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e2f;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: #704e4e;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .container h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #ffde59;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form input[type="text"] {
+            width: 300px;
+            height: 45px;
+            border-radius: 8px;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+        }
+
+        form input[type="text"]:focus {
+            border-color: #ffde59;
+            outline: none;
+            box-shadow: 0 0 8px #ffde59;
+        }
+
+        form button {
+            width: 320px;
+            height: 50px;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-size: 18px;
+            color: white;
+            background-color: #000;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #ffde59;
+            color: black;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Audio Extractor</h1>
+        <form action="/generate" method="post">
+            <input type="text" name="Link" id="link" placeholder="Enter the link">
+            <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Generate
+            </button>
+        </form>
+        <div class="footer">
+            <p>Made By KanavRana © 2025</p>
+        </div>
+    </div>
+</body>
+</html>

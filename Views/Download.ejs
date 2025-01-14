@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px 30px;
+            border-radius: 15px;
+            background-color: #1f1f1f;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .container h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ff7f50;
+        }
+
+        form button {
+            background-color: #ff7f50;
+            color: #ffffff;
+            font-size: 18px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        form button:hover {
+            background-color: #ffa07a;
+            color: #000000;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #bbbbbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ready to Download</h1>
+        <form action="/download" method="post">
+            <button type="submit">Download</button>
+        </form>
+        <div class="footer">
+            <p>Powered by KanavRana© 2025</p>
+        </div>
+    </div>  
+</body>
+</html>
